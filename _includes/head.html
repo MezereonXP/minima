@@ -10,5 +10,7 @@
   {%- endif -%}
 
   {%- include custom-head.html -%}
-  
+  {%- if page.usemathjax -%}
+    {% include mathjax-head.html %}
+  {%- endif -%}
 </head>
